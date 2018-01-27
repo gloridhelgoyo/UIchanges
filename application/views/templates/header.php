@@ -36,77 +36,44 @@
 
 <body>
 
-    <!--
-        Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-        Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-    -->
-<!-- Header Name -->
-<div class="user-header">
-    <img src="assets/images/new_logo.png" width="10%" height="70%">
-    <div class="user-container">
-    <h1>Heinrich Bangui</h1>
-    <p>City Budget Office</p>
-    </div>
 
-<!-- Nav Notification / profile -->
+<div class="wrapper">
+    <div class="sidebar" data-background-color="black" data-active-color="danger">
 
-<nav class="navbar-right">
-    <div class="container-fluid">
-    <ul class="nav navbar-nav">
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-        <i class="ti-bell"> Notification</i> 
-        <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Notification 1</a></li>
-          <li><a href="#">Notification 2</a></li>
-          <li><a href="#">Notification 3</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-        <i class="ti-user"> Profile</i> 
-        <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-        <li><a href="#">View Profile</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-    </li>
-    </ul>
-  </div>
-</nav>
-</div>
+        <!--
+            Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+            Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+        -->
 
-<!-- END -->
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    GSO INVENTORY
+                </a>
+            </div>
 
-<!-- Main Nav -->
-    <div class="main-panel">
-        <nav class="navbar">
-            <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li>
+            <ul class="nav">
+                <li id="Dashboard">
                     <a href="dashboard">
                         <i class="fa fa-dashboard"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li  class="active">
+                <li  id="Inventory">
                     <a href="inventory">
-                       <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars"></i>
                         <p>Inventory</p>
                     </a>
                 </li>
-                <li>
+                <li id="Department">
                     <a href="department">
-                      <i class="fa fa-home"></i>
+                        <i class="fa fa-home"></i>
                         <p>Department</p>
                     </a>
                 </li>
-                <li>
+                <li id="Return">
                     <a href="return">
-                      <i class="fa fa-reply"></i>
+                        <i class="fa fa-reply"></i>
                         <p>Return</p>
                     </a>
                 </li>
@@ -121,8 +88,55 @@
                         <li><a href="#"><p>Return</p></a></li>
                         <li><a href="#"><p>Edit</p></a></li>
                     </ul>
+                </li>
             </ul>
+        </div>
+    </div>
+    <script>
+        $('#<?= $title?>').toggleClass('active');
+    </script>
+    <div class="main-panel">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar bar1"></span>
+                        <span class="icon-bar bar2"></span>
+                        <span class="icon-bar bar3"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><?= $title?></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-bell"></i>
+                                <p class="notification"></p>
+                                <p>Notifications</p>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Notification 1</a></li>
+                                <li><a href="#">Notification 2</a></li>
+                                <li><a href="#">Notification 3</a></li>
+                                <li><a href="#">Notification 4</a></li>
+                                <li><a href="#">Notification 5</a></li>
+                            </ul>
+                        </li>
+                    <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-user"></i>
+                                    <p>Profile</p>
+                                    <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li id="User" ><a href="user">View Profile</a></li>
+                                <li><a href="#">Logout</a></li>
+                              </ul>
+                        </li>
+                    </ul>
 
+                </div>
+            </div>
         </nav>
-
-<!-- End-->
