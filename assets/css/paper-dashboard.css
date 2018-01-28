@@ -210,27 +210,26 @@ hr {
   height: 100vh; }
 
 .sidebar {
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 1;
   background-size: cover;
   background-position: center center; }
-.sidebar .sidebar-wrapper {
+  .sidebar .sidebar-wrapper {
     position: relative;
     max-height: none;
     min-height: 100%;
     overflow: hidden;
-    width: 200px;
+    width: 260px;
     z-index: 4;
     box-shadow: inset -1px 0px 0px 0px #DDDDDD; }
-
   .sidebar .sidebar-background {
     position: absolute;
     z-index: 1;
     height: 100%;
-    width: 70%;
+    width: 100%;
     display: block;
     top: 0;
     left: 0;
@@ -242,18 +241,18 @@ hr {
   width: 260px;
   display: block;
   font-weight: 200; }
-  .sidebar .logo,
-  .off-canvas-sidebar .logo {
+.sidebar .logo,
+.off-canvas-sidebar .logo {
     padding: 18px 0px;
     margin: 0 20px; }
-    .sidebar .logo p,
-    .off-canvas-sidebar .logo p {
+.sidebar .logo p,
+.off-canvas-sidebar .logo p {
       float: left;
       font-size: 20px;
       margin: 10px 10px;
       line-height: 20px; }
-    .sidebar .logo .simple-text,
-    .off-canvas-sidebar .logo .simple-text {
+.sidebar .logo .simple-text,
+.off-canvas-sidebar .logo .simple-text {
       text-transform: uppercase;
       padding: 4px 0px;
       display: block;
@@ -261,24 +260,24 @@ hr {
       text-align: center;
       font-weight: 400;
       line-height: 30px; }
-  .sidebar .nav,
-  .off-canvas-sidebar .nav {
+.sidebar .nav,
+.off-canvas-sidebar .nav {
     margin-top: 20px; }
-    .sidebar .nav li > a,
-    .off-canvas-sidebar .nav li > a {
+.sidebar .nav li > a,
+.off-canvas-sidebar .nav li > a {
       margin: 10px 0px;
       padding-left: 25px;
       padding-right: 25px;
       opacity: .7; }
-    .sidebar .nav li:hover > a,
-    .off-canvas-sidebar .nav li:hover > a {
+.sidebar .nav li:hover > a,
+.off-canvas-sidebar .nav li:hover > a {
       opacity: 1; }
-    .sidebar .nav li.active > a,
-    .off-canvas-sidebar .nav li.active > a {
+.sidebar .nav li.active > a,
+.off-canvas-sidebar .nav li.active > a {
       color: #7A9E9F;
       opacity: 1; }
-      .sidebar .nav li.active > a:before,
-      .off-canvas-sidebar .nav li.active > a:before {
+.sidebar .nav li.active > a:before,
+.off-canvas-sidebar .nav li.active > a:before {
         border-right: 17px solid #DDDDDD;
         border-top: 17px solid transparent;
         border-bottom: 17px solid transparent;
@@ -287,8 +286,8 @@ hr {
         position: absolute;
         right: 0;
         top: 8px; }
-      .sidebar .nav li.active > a:after,
-      .off-canvas-sidebar .nav li.active > a:after {
+.sidebar .nav li.active > a:after,
+.off-canvas-sidebar .nav li.active > a:after {
         border-right: 17px solid #f4f3ef;
         border-top: 17px solid transparent;
         border-bottom: 17px solid transparent;
@@ -390,12 +389,180 @@ hr {
     color: #EB5E28;
     opacity: 1; }
 
+
+
+/*!HEADER*/
+header{
+  height: 110px;
+  background-color:black;
+
+}
+
+
+.header .navbar-right{
+  margin-top: 0px;
+  margin-right: 20px;
+
+} 
+.header .navbar-right i{
+  font-size: 120%;
+  color:white;
+}
+.header .navbar-right b{
+  color:white;
+}
+.header .navbar-right li:{
+  margin-right: 10px;
+}
+
+/*!----end---*/
+
+/*! USER-HEADER */
+.navh .navbar{
+  background-color:#FF8C00;
+  height:40px;
+  margin-left:;
+  margin-bottom:;
+  margin-top: -60px;
+}
+.navh .navbar ul{
+  margin-top: -10px;
+}
+
+.navh .navbar i{
+  color:black;
+}
+.navh .navbar p{
+  color:black;
+}
+.navh .navbar b{
+  color:black;
+}
+
+/*! Nav Notification / profile */
+.user-header .navbar-right{
+  margin-top: 0px;
+  margin-right: 20px;
+}
+.user-header .navbar-right i{
+  font-size: 120%;
+  color:black;
+}
+.user-header .navbar-right b{
+  color:black;
+}
+.user-header .navbar-right button{
+  background-color:#90EE90;
+  margin-top: 0px;
+  margin-right: 10px;
+  border-color:black;
+}
+  
+
+/*!*/
+.main-panel .navbar{
+  background-color: #FF8C00;
+  height: 100px;
+
+}
+
+.main-panel .navbar i{
+  color:black;
+  font-size: 20px;
+}
+.main-panel .navbar p{
+  color:black;
+  font-size: 20px;
+}
+.main-panel .navbar ul{
+  margin-left: 20px;
+}
+
+.wrapper{
+  background-color: #F5F5DC;
+}
+
+#table1 a{
+  margin-left:8px;
+}
+#table1 thead{
+   background-color:#FF8C00;
+}
+#table1 td{
+   background-color:#FAFAD2;
+}
+#table1 th, td{
+   border:1px solid black;
+}
+
+
+.container .btn {
+  margin-left: -150px;
+  margin-right:160px;
+}
+.container .btn-info {
+    background:#90EE90 ;
+    color: black;
+    border-color:black;
+}
+
+
+
+/*! SAMPLE SAMPLE */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*! ---end SAMPLE SAMPLE */
+
+
+
 .main-panel {
-  background-color: #f4f3ef;
+  background-color:;
   position: relative;
   z-index: 2;
   float: right;
-  width: calc(100% - 260px);
+  width: calc(100% );
   min-height: 100%; }
   .main-panel > .content {
     padding: 30px 15px;

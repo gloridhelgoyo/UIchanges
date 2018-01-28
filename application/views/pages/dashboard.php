@@ -1,4 +1,19 @@
 
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.notify({
+            icon: 'ti-gift',
+            message: "Welcome to <b>Paper Dashboard</b>"
+
+        },{
+            type: 'success',
+            timer: 4000
+        });
+
+    });
+</script>
+
+
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -83,13 +98,13 @@
                         <div class="row">
                             <div class="col-xs-5">
                                 <div class="icon-big icon-info text-center">
-                                    <i class="ti-twitter-alt"></i>
+                                    <i class="ti-package"></i>
                                 </div>
                             </div>
                             <div class="col-xs-7">
                                 <div class="numbers">
-                                    <p>Followers</p>
-                                    +45
+                                    <p>Stocks</p>
+                                    45
                                 </div>
                             </div>
                         </div>
@@ -177,6 +192,6 @@
         </div>
     </div>
 </div>
-
+</div>
 </div>
 </div>

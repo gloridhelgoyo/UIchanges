@@ -25,55 +25,75 @@
 
     <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/dataTables.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
 
     <!-- Bootstrap core CSS     -->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <script src="assets/js/jquery.min.js"></script>
 
 </head>
 
 <body>
-
-
 <div class="wrapper">
-    <div class="sidebar" data-background-color="black" data-active-color="danger">
+<header>
+<div class="header">
+<nav class="navbar-right">
+    <div class="container-fluid">
+    <ul class="nav navbar-nav">
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+        <i class="ti-bell"> Notification</i> 
+        <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Notification 1</a></li>
+          <li><a href="#">Notification 2</a></li>
+          <li><a href="#">Notification 3</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+        <i class="ti-user"> Profile</i> 
+        <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+        <li><a href="#">View Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+    </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</header>
 
-        <!--
-            Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
-            Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
-        -->
 
-        <div class="sidebar-wrapper">
-            <div class="logo">
-                <a href="#" class="simple-text">
-                    GSO INVENTORY
-                </a>
-            </div>
-
-            <ul class="nav">
-                <li id="Dashboard">
+<div class="navh">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
                     <a href="dashboard">
                         <i class="fa fa-dashboard"></i>
                         <p>Dashboard</p>
                     </a>
+                  
                 </li>
-                <li  id="Inventory">
+                <li>
                     <a href="inventory">
-                        <i class="fa fa-bars"></i>
+                       <i class="fa fa-bars"></i>
                         <p>Inventory</p>
                     </a>
                 </li>
-                <li id="Department">
+                <li>
                     <a href="department">
-                        <i class="fa fa-home"></i>
+                      <i class="fa fa-home"></i>
                         <p>Department</p>
                     </a>
                 </li>
-                <li id="Return">
+                <li>
                     <a href="return">
-                        <i class="fa fa-reply"></i>
+                      <i class="fa fa-reply"></i>
                         <p>Return</p>
                     </a>
                 </li>
@@ -81,7 +101,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     <i class="ti-agenda"></i>
                     <p>Logs</p>
-                    <span class="caret"></span></a>
+                    <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><p>Increase</p></a></li>
                         <li><a href="#"><p>Decrease</p></a></li>
@@ -90,53 +110,12 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-    </div>
-    <script>
-        $('#<?= $title?>').toggleClass('active');
-    </script>
-    <div class="main-panel">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar bar1"></span>
-                        <span class="icon-bar bar2"></span>
-                        <span class="icon-bar bar3"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><?= $title?></a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-bell"></i>
-                                <p class="notification"></p>
-                                <p>Notifications</p>
-                                <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Notification 5</a></li>
-                            </ul>
-                        </li>
-                    <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-user"></i>
-                                    <p>Profile</p>
-                                    <b class="caret"></b>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li id="User" ><a href="user">View Profile</a></li>
-                                <li><a href="#">Logout</a></li>
-                              </ul>
-                        </li>
-                    </ul>
 
-                </div>
-            </div>
+
+
         </nav>
+</div>
+
+
+
+<!-- End-->
