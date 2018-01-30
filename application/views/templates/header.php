@@ -32,90 +32,84 @@
     <script src="assets/js/jquery.min.js"></script>
 
 </head>
-
 <body>
-<div class="wrapper">
+<div class="body">
 <header>
-<div class="header">
-<nav class="navbar-right">
-    <div class="container-fluid">
-    <ul class="nav navbar-nav">
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-        <i class="ti-bell"> Notification</i> 
-        <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Notification 1</a></li>
-          <li><a href="#">Notification 2</a></li>
-          <li><a href="#">Notification 3</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> 
-        <i class="ti-user"> Profile</i> 
-        <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-        <li><a href="#">View Profile</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-    </li>
-    </ul>
-  </div>
-</nav>
-</div>
-</header>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <img src="assets/images/logo.png" width="30%" height="70%">
+                        <div class="user-container">
+                        </div>
+        </div>
 
-
-<div class="navh">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
+        <div class="nav">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="dashboard">
                         <i class="fa fa-dashboard"></i>
                         <p>Dashboard</p>
                     </a>
-                  
-                </li>
-                <li>
-                    <a href="inventory">
-                       <i class="fa fa-bars"></i>
-                        <p>Inventory</p>
-                    </a>
-                </li>
                 <li>
                     <a href="department">
-                      <i class="fa fa-home"></i>
+                        <i class="fa fa-home"></i>
                         <p>Department</p>
                     </a>
-                </li>
+                <li>
+                    <a href="inventory">
+                        <i class="fa fa-bars"></i>
+                        <p>Inventory</p>
+                    </a>
                 <li>
                     <a href="return">
-                      <i class="fa fa-reply"></i>
+                        <i class="fa fa-reply"></i>
                         <p>Return</p>
                     </a>
-                </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="ti-agenda"></i>
-                    <p>Logs</p>
-                    <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="ti-agenda"></i>
+                        <p>Logs</p>
+                        <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><p>Increase</p></a></li>
-                        <li><a href="#"><p>Decrease</p></a></li>
-                        <li><a href="#"><p>Return</p></a></li>
-                        <li><a href="#"><p>Edit</p></a></li>
+                        <li><a href="#">Increased</a></li>
+                        <li><a href="#">Decreased</a></li>
+                        <li><a href="#">Edited</a></li>
+                        <li><a href="#">Returned Log</a></li>
+                        <li role="separator" class="divider"></li>
                     </ul>
                 </li>
             </ul>
 
-
-
-        </nav>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#">
+                <i class="fa fa-bell"></i>
+                <p>Notification</p>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user-circle-o"></i>
+                <p>Profile</p>
+                <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="user">View Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
 </div>
-
-
+</body>
 
 <!-- End-->
